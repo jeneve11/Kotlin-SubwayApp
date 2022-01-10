@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="subwayLines">
+        <item>1호선</item>
+        <item>2호선</item>
+        <item>3호선</item>
+        <item>4호선</item>
+        <item>5호선</item>
+        <item>6호선</item>
+        <item>7호선</item>
+        <item>8호선</item>
+        <item>9호선</item>
+        <!-- <item>경의중앙선</item>
+        <item>분당선</item>
+        <item>신분당선</item> -->
+    </string-array>
+
+    <string-array name="line_1">
+        <item>서울</item>
+        <item>시청</item>
+        <item>종각</item>
+        <item>종로3가</item>
+        <item>종로5가</item>
+        <item>동대문</item>
+        <item>신설동</item>
+        <item>제기동</item>
+        <item>청량리(서울시립대입구)</item>
+        <item>동묘앞</item>
+    </string-array>
+
+    <string-array name="line_2">
+        <item>신도림</item>
+        <item>상왕십리</item>
+        <item>왕십리</item>
+        <item>2호선이다</item>
+    </string-array>
+
+    <string-array name="line_3">
+        <item>신도림</item>
+        <item>상왕십리</item>
+        <item>왕십리</item>
+        <item>3호선이다</item>
+    </string-array>
+
+    <string-array name="line_4">
+        <item>신도림</item>
+        <item>상왕십리</item>
+        <item>왕십리</item>
+        <item>4호선이다</item>
+    </string-array>
+
+    <string-array name="line_5">
+        <item>신도림</item>
+        <item>상왕십리</item>
+        <item>왕십리</item>
+        <item>5호선이다</item>
+    </string-array>
+
+    <string-array name="line_6">
+        <item>신도림</item>
+        <item>상왕십리</item>
+        <item>왕십리</item>
+        <item>6호선이다</item>
+    </string-array>
+
+    <string-array name="line_7">
+        <item>신도림</item>
+        <item>상왕십리</item>
+        <item>왕십리</item>
+        <item>7호선이다</item>
+    </string-array>
+
+    <string-array name="line_8">
+        <item>신도림</item>
+        <item>상왕십리</item>
+        <item>왕십리</item>
+        <item>8호선이다</item>
+    </string-array>
+
+    <string-array name="line_9">
+        <item>신도림</item>
+        <item>상왕십리</item>
+        <item>왕십리</item>
+        <item>9호선이다</item>
+    </string-array>
+
+    <string-array name="line_total">
+        <item>신도림</item>
+        <item>상왕십리</item>
+        <item>왕십리</item>
+        <item>전체다</item>
+    </string-array>
+</resources>
