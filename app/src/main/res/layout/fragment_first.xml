@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EFED88"
+    android:background="#FFFFFF"
     tools:context=".SelectionActivity">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -12,9 +12,9 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="32dp"
         android:background="#FFFFFF"
         android:hint="Subway Line"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,9 +37,9 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="256dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="32dp"
         android:background="#FFFFFF"
         android:hint="Target Station"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,4 +55,21 @@
             android:inputType="none"
             android:text="목적역 선택" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:enabled="false"
+        android:text="확  인"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:backgroundTint="#0057FF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
