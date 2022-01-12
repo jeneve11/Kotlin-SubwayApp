@@ -1,5 +1,6 @@
 package com.example.subway
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -13,7 +14,6 @@ import kotlinx.android.synthetic.*
 import kotlinx.android.synthetic.main.fragment_first.*
 
 class FirstFragment : Fragment() {
-
     private var _binding: FragmentFirstBinding? = null
     private val binding get() = _binding!!
 
@@ -39,6 +39,9 @@ class FirstFragment : Fragment() {
             val subwayLine = autoCompleteTextView.text
             val subwayStation = autoCompleteTextView2.text
             Log.d("tag", "button Clicked, Target Line: $subwayLine, Target Station: $subwayStation")
+
+            //val intent = Intent(this, MainActivity::class.java)
+
         }
         return binding.root
     }
@@ -73,9 +76,6 @@ class FirstFragment : Fragment() {
             button.isEnabled = true
         }
     }
-
-
-
 
     override fun onDestroyView() {
         super.onDestroyView()
