@@ -1,11 +1,15 @@
 package com.example.subway
 
+import android.Manifest
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.ArrayAdapter
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.annotation.RequiresApi
 import com.example.subway.databinding.ActivitySelectionBinding
 import kotlinx.android.synthetic.main.activity_selection.autoCompleteTextView
 import kotlinx.android.synthetic.main.activity_selection.autoCompleteTextView2
@@ -13,6 +17,7 @@ import kotlinx.android.synthetic.main.activity_selection.autoCompleteTextView2
 class SelectionActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySelectionBinding
 
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_selection)
@@ -37,6 +42,7 @@ class SelectionActivity : AppCompatActivity() {
             val subwayLine = autoCompleteTextView.text
             val subwayStation = autoCompleteTextView2.text
             Log.d("tag", "button Clicked, Target Line: $subwayLine, Target Station: $subwayStation")
+
 
             // passing two parameters
             val intent = Intent(this@SelectionActivity, MainActivity::class.java)
