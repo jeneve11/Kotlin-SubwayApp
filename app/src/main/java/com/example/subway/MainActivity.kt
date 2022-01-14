@@ -10,11 +10,17 @@ import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
+import androidx.fragment.app.Fragment
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var fusedLocationClient: FusedLocationProviderClient
+    private var fragmentOne = FragmentOne()
+    private var fragmentTwo = FragmentTwo()
+    private var fragmentThree = FragmentThree()
+
     @RequiresApi(Build.VERSION_CODES.N)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +29,9 @@ class MainActivity : AppCompatActivity() {
 
         // hide action bar
         supportActionBar?.hide()
+
+        // Bottom Navigation
+        initNavigationBar()
 
         // get parameter from SelectionActivity
         val targetStation = intent.getStringExtra("keyStation")
@@ -77,5 +86,32 @@ class MainActivity : AppCompatActivity() {
                 Log.d("Tag", "Latitude: $latitude, Longitude: $longitude")
             }
         }
+    }
+
+    private fun initNavigationBar() {
+        bnv_main.run {
+            setOnItemSelectedListener {
+                when (it.itemId) {
+                    R.id.first -> {
+                        changeFragment(fragmentOne)
+                    }
+                    R.id.second -> {
+                        changeFragment(fragmentTwo)
+                    }
+                    R.id.third -> {
+                        changeFragment(fragmentThree)
+                    }
+                }
+                true
+            }
+            selectedItemId = R.id.first
+        }
+    }
+
+    private fun changeFragment(fragment: Fragment) {
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fl_container, fragment)
+            .commit()
     }
 }
