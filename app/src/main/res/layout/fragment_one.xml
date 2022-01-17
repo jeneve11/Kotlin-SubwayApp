@@ -1,15 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FragmentOne">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="40sp"
-        android:text="Fragment One" />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+
+
+        android:layout_marginBottom="124dp"
+        android:src="@drawable/ic_line_1"
+        app:layout_constraintBottom_toTopOf="@+id/refreshTime"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/distToDest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+
+        android:text="왕십리역 5역 남음"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/refreshTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/logoImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.487" />
+
+    <TextView
+        android:id="@+id/refreshTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="오후 1:49 기준"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/gpsNow"
+        app:layout_constraintEnd_toStartOf="@+id/refreshButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772" />
+
+    <ImageButton
+        android:id="@+id/refreshButton"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="36dp"
+        android:background="#00ff0000"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_refresh_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distToDest"
+        app:layout_constraintVertical_bias="0.254" />
+
+    <TextView
+        android:id="@+id/gpsNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="216dp"
+        android:gravity="center"
+        android:text="GPS"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
