@@ -48,9 +48,6 @@ class FragmentOne : Fragment() {
         _binding = FragmentOneBinding.inflate(inflater, container, false)
 
         binding.refreshButton.setOnClickListener {
-            // 이 함수의 기능을 맨 처음 fragment 실행될 때, resume 될때도 하는게 좋은듯
-            // private fun 으로 만들어서 여기저기에 넣자
-
             val targetStation = arguments?.getString("targetStation")
             val line = arguments?.getString("line")
 
@@ -70,7 +67,8 @@ class FragmentOne : Fragment() {
 
     // targetStation에 따라 text 변경
     private fun refreshText(targetStation: String?) {
-        val distToDest: String = targetStation + "역까지 N역 남음"
+        val text: String = "역까지 N역 남음" // 함수로 거리 출력해야 함
+        val distToDest: String = targetStation + text
         binding.distToDest.text = distToDest
     }
 
