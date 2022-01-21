@@ -20,6 +20,8 @@
         <entry key="..\:/Users/82105/AndroidStudioProjects/Subway/app/src/main/res/drawable/side_nav_bar.xml" value="0.25729166666666664" />
         <entry key="..\:/Users/82105/AndroidStudioProjects/Subway/app/src/main/res/font-v26/font.xml" value="0.18177083333333333" />
         <entry key="..\:/Users/82105/AndroidStudioProjects/Subway/app/src/main/res/font/font.xml" value="0.18177083333333333" />
+        <entry key="..\:/Users/82105/AndroidStudioProjects/Subway/app/src/main/res/font/font_nanumgothic.xml" value="0.16111111111111112" />
+        <entry key="..\:/Users/82105/AndroidStudioProjects/Subway/app/src/main/res/font/font_nanumgothicbold.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/82105/AndroidStudioProjects/Subway/app/src/main/res/layout/activity_main.xml" value="0.152" />
         <entry key="..\:/Users/82105/AndroidStudioProjects/Subway/app/src/main/res/layout/activity_main2.xml" value="0.136" />
         <entry key="..\:/Users/82105/AndroidStudioProjects/Subway/app/src/main/res/layout/activity_selection.xml" value="0.1" />
@@ -29,7 +31,7 @@
         <entry key="..\:/Users/82105/AndroidStudioProjects/Subway/app/src/main/res/layout/fragment_blank.xml" value="0.11822916666666666" />
         <entry key="..\:/Users/82105/AndroidStudioProjects/Subway/app/src/main/res/layout/fragment_first.xml" value="0.1" />
         <entry key="..\:/Users/82105/AndroidStudioProjects/Subway/app/src/main/res/layout/fragment_one.xml" value="0.2" />
-        <entry key="..\:/Users/82105/AndroidStudioProjects/Subway/app/src/main/res/layout/fragment_three.xml" value="0.264" />
+        <entry key="..\:/Users/82105/AndroidStudioProjects/Subway/app/src/main/res/layout/fragment_three.xml" value="0.4" />
         <entry key="..\:/Users/82105/AndroidStudioProjects/Subway/app/src/main/res/layout/fragment_two.xml" value="0.14947916666666666" />
         <entry key="..\:/Users/82105/AndroidStudioProjects/Subway/app/src/main/res/layout/nav_header_main.xml" value="0.1490036231884058" />
         <entry key="..\:/Users/82105/AndroidStudioProjects/Subway/app/src/main/res/layout/subwayline_item.xml" value="0.16" />

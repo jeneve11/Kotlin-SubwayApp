@@ -34,7 +34,7 @@
 
         android:text="왕십리역 5역 남음"
         android:textSize="40sp"
-        android:fontFamily="@font/font"
+        android:fontFamily="@font/font_nanumgothic"
 
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -48,7 +48,7 @@
         android:gravity="center"
         android:text="오후 1:49 기준"
         android:textSize="40sp"
-        android:fontFamily="@font/font"
+        android:fontFamily="@font/font_nanumgothic"
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/horizontal_guideline"
@@ -76,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="136dp"
         android:gravity="center"
-        android:fontFamily="@font/font"
+        android:fontFamily="@font/font_nanumgothic"
         android:text="GPS"
         android:textSize="40sp"
         app:layout_constraintTop_toBottomOf="@id/refreshTime"
