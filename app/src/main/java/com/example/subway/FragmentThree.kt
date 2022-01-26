@@ -19,25 +19,24 @@ class FragmentThree : Fragment() {
     override fun onResume() {
         super.onResume()
 
-
-            binding.toggleSwitch1.setOnClickListener {
-                // binding.toggleSwitch1.playAnimation()
-                if (!isCheckedSwitch1) {
-                    isCheckedSwitch1 = true
-                    val animator = ValueAnimator.ofFloat(0f, 0.5f).setDuration(500)
-                    animator.addUpdateListener {
-                        binding.toggleSwitch1.setProgress(animator.animatedValue as Float)
-                    }
-                    animator.start()
-                } else if (isCheckedSwitch1) {
-                    isCheckedSwitch1 = false
-                    val animator = ValueAnimator.ofFloat(0.5f, 1f).setDuration(500)
-                    animator.addUpdateListener {
-                        binding.toggleSwitch1.setProgress(animator.animatedValue as Float)
-                    }
-                    animator.start()
+        binding.toggleSwitch1.setOnClickListener {
+            // binding.toggleSwitch1.playAnimation()
+            if (!isCheckedSwitch1) {
+                isCheckedSwitch1 = true
+                val animator = ValueAnimator.ofFloat(0f, 0.5f).setDuration(500)
+                animator.addUpdateListener {
+                    binding.toggleSwitch1.setProgress(animator.animatedValue as Float)
                 }
+                animator.start()
+            } else if (isCheckedSwitch1) {
+                isCheckedSwitch1 = false
+                val animator = ValueAnimator.ofFloat(0.5f, 1f).setDuration(500)
+                animator.addUpdateListener {
+                    binding.toggleSwitch1.setProgress(animator.animatedValue as Float)
+                }
+                animator.start()
             }
+        }
 
 
         binding.toggleSwitch2.setOnClickListener {
